@@ -1,0 +1,41 @@
+{
+  "name": "oidre/superadmin",
+  "description": ":Admin Template Tailwind",
+  "license": "license",
+  "authors": [{
+    "name": "Andre Prilly Kurniawan",
+    "email": "oidre@pm.me",
+    "homepage": "https://oidre.co"
+  }],
+  "homepage": "https://github.com/oidre/superadmin",
+  "keywords": ["Laravel", "SuperAdmin"],
+  "require": {
+    "illuminate/support": "~5|~6|~7"
+  },
+  "require-dev": {
+    "phpunit/phpunit": "^8.0",
+    "mockery/mockery": "^1.1",
+    "orchestra/testbench": "~3|~4",
+    "sempro/phpunit-pretty-print": "^1.0"
+  },
+  "autoload": {
+    "psr-4": {
+      "Oidre\\SuperAdmin\\": "src/"
+    }
+  },
+  "autoload-dev": {
+    "psr-4": {
+      "Oidre\\SuperAdmin\\Tests\\": "tests"
+    }
+  },
+  "extra": {
+    "laravel": {
+      "providers": [
+        "Oidre\\SuperAdmin\\SuperAdminServiceProvider"
+      ],
+      "aliases": {
+        "SuperAdmin": "Oidre\\SuperAdmin\\Facades\\SuperAdmin"
+      }
+    }
+  }
+}

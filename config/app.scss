@@ -1,0 +1,70 @@
+// Fonts
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@400&display=swap');
+
+@import "tailwindcss/base";
+
+@import "tailwindcss/components";
+
+@import "tailwindcss/utilities";
+
+@import "tailwindcss/screens";
+
+body * {
+  font-family: 'Lato', sans-serif;
+}
+
+[x-cloak] {
+  display: none;
+}
+
+/* width */
+.dre::-webkit-scrollbar {
+  width: 5px;
+}
+
+/* Track */
+.dre::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+/* Handle */
+.dre::-webkit-scrollbar-thumb {
+  background: rgba(0, 0, 0, 0.35);
+  border-radius: 10px;
+}
+
+.dre {
+  transition: visibility 0.3s;
+  overscroll-behavior: none;
+}
+
+.active {
+  @apply bg-graylight;
+  @apply text-gray-800;
+}
+
+.link-active {
+  @apply text-gray-800;
+}
+
+.h-sidebar {
+  height: calc(100% - 4rem);
+}
+
+.sidebar {
+  @apply -translate-x-full;
+
+  &.open {
+    @apply translate-x-0;
+  }
+}
+
+@screen md {
+  .header {
+    @apply pl-0;
+
+    &.open {
+      @apply pl-64;
+    }
+  }
+}
