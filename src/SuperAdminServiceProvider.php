@@ -65,7 +65,7 @@ class SuperAdminServiceProvider extends ServiceProvider
         // ], 'superadmin.config');
 
         $this->publishes([
-            __DIR__ . '/../config/tailwind.config.js' => base_path('tailwind.config.js'),
+            __DIR__ . '/../config/tail.config.js' => base_path('tailwind.config.js'),
         ], 'superadmin');
 
         $this->publishes([
@@ -83,7 +83,7 @@ class SuperAdminServiceProvider extends ServiceProvider
         // Publishing the views.
         $this->publishes([
             __DIR__ . '/resources/views/components' => base_path('resources/views/components/sa'),
-        ], 'superadmin.template');
+        ], 'superadmin');
 
         // Publishing assets.
         /*$this->publishes([
