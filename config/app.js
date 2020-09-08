@@ -1,6 +1,6 @@
 require('./alpine');
 
-function tes() {
+window.tes = function() {
   var s = document.getElementById("mysidebar");
   var h = document.getElementById("myheader");
   var m = document.getElementById("mymain");
@@ -17,7 +17,7 @@ function tes() {
   }
 }
 
-function toggle() {
+window.toggle = function() {
   var s = document.getElementById("mysidebar");
   var m = document.getElementById("mymain");
   var h = document.getElementById("myheader");
@@ -26,10 +26,12 @@ function toggle() {
   m.classList.toggle("open");
 }
 
-if (document.readyState == "interactive") {
-  var x = document.getElementsByTagName("BODY")[0];
-  x.style.display = "none";
-  window.addEventListener("DOMContentLoaded", tes);
+document.onreadystatechange = function() {
+  if (document.readyState == "interactive") {
+    var x = document.getElementsByTagName("BODY")[0];
+    x.style.display = "none";
+    window.addEventListener("DOMContentLoaded", tes);
+  }
 }
 
 window.addEventListener("load", function() {

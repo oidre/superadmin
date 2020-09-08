@@ -37,7 +37,7 @@ If you discover any security related issues, please email author email instead o
 
 ## Credits
 
-- [author name][link-author]
+- [Andre Prilly Kurniawan][link-author]
 - [All Contributors][link-contributors]
 
 ## License
