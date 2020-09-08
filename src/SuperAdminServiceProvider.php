@@ -65,7 +65,7 @@ class SuperAdminServiceProvider extends ServiceProvider
         // ], 'superadmin.config');
 
         $this->publishes([
-            __DIR__ . '/../config/tail.config.js' => base_path('tailwind.config.js'),
+            __DIR__ . '/../config/tailwind.config.js' => base_path('tailwind.config.js'),
         ], 'superadmin');
 
         $this->publishes([
